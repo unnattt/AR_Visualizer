@@ -27,12 +27,12 @@ private int score = 0;
     {
         if (pointsFound < 2)
         {
-            foreach (var plane in args.added)
+            foreach (ARPlane plane in args.added)
             {
                 CheckAndPlaceObjects(plane);
             }
 
-            foreach (var plane in args.updated)
+            foreach (ARPlane plane in args.updated)
             {
                 CheckAndPlaceObjects(plane);
             }
@@ -41,7 +41,7 @@ private int score = 0;
         {
             // Disable the plane manager and planes rendering
             planeManager.enabled = false;
-            foreach (var plane in planeManager.trackables)
+            foreach (ARPlane plane in planeManager.trackables)
             {
                 plane.gameObject.SetActive(false);
             }
@@ -122,7 +122,6 @@ void DisablePlaneDetection()
         // Destroy(touchedObject);
         // touchedObject.SetActive(false);
         touchedObject.ScaleDown();
-
         Invoke(nameof(RepositionModelRandomly), 0.3f);
         // Increment the score
         score++;

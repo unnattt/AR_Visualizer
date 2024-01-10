@@ -5,15 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/SplashScreen.unity
     guid: eac150345cb6c4b548955e751957887f
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/AR_Visualizer.unity
     guid: bf875e23d1bcd422297d4ac1c0f875b2
-  - enabled: 1
-    path: Assets/Scenes/AR_Demo.unity
-    guid: e57cdf6c427dc4a91be18548ed3c86ac
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 744b813df90924c169af73489b8325de,
       type: 2}
